@@ -1,0 +1,16 @@
+{{> header.mustache}}
+
+<h1>WindowsArea.de News</h1>
+<ul>
+{{#news}}
+    <li><a href="{{link}}" target="_blank">{{title.rendered}}</a></li>
+{{/news}}
+</ul>
+
+<h1>My Links</h1>
+<ul>
+{{#links}}
+    <li><a href="{{url}}" target="_blank">{{url}}</a></li>
+{{/links}}
+</ul>
+{{> footer.mustache}}

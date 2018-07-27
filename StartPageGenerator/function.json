@@ -1,0 +1,32 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "name": "myTimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 */5 * * * *"
+    },
+    {
+      "type": "blob",
+      "name": "headerTemplate",
+      "path": "templates/header.mustache",
+      "connection": "AzureWebJobsStorage",
+      "direction": "in"
+    },
+    {
+      "type": "blob",
+      "name": "footerTemplate",
+      "path": "templates/footer.mustache",
+      "connection": "AzureWebJobsStorage",
+      "direction": "in"
+    },
+    {
+      "type": "blob",
+      "name": "indexTemplate",
+      "path": "templates/index.mustache",
+      "connection": "AzureWebJobsStorage",
+      "direction": "in"
+    }
+  ]
+}
